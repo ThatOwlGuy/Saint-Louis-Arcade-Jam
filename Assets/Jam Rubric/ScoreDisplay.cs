@@ -15,6 +15,9 @@ public class ScoreDisplay : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        if (player == null)
+            return;
+
         text.text = string.Format("{0}Up\n{1}", (int)player.playerIndex, player.score.ToString("D6"));
 	}
 }

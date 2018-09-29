@@ -12,16 +12,16 @@ public class Player : MonoBehaviour {
     }    
 
     public int score = 0;
-    public InputHelper inputHelper;
-    public Player.Index playerIndex = Player.Index.One;
+    protected InputHelper input;
+    public Index playerIndex = Index.One;
 
     // Update is called once per frame
-    void Update () {
-		if (Input.GetKeyDown(inputHelper.button1))
+    virtual public void Update () {
+		if (Input.GetKeyDown(input.button1))
         {
             score += 1;
         }
-        if (Input.GetKeyDown(inputHelper.button2))
+        if (Input.GetKeyDown(input.button2))
         {
             score -= 1;
         }

@@ -12,13 +12,22 @@ public class HiScoreDisplay : MonoBehaviour {
     private Text text;
     private int highScore = 0;
 
+    private Vector2Int localScore;
+
     void Start () {
         text = GetComponent<Text>();
+        localScore = new Vector2Int(0, 0);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        highScore = Math.Max(Math.Max(playerOne.score, playerTwo.score), highScore);
+        if (playerOne != null)
+            localScore.x = playerOne.score;
+
+        if (playerTwo != null)
+            localScore.y = playerTwo.score;
+
+        highScore = Math.Max(Math.Max(localScore.x, localScore.y), highScore);
         text.text = string.Format("Hi-{0}", highScore.ToString("D6"));
 	}
 }

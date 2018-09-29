@@ -1,11 +1,17 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class DeathHandler : MonoBehaviour {
 
-    public void RegisterPlayerDeath(string player)
+    public void RegisterPlayerDeath(Player player)
     {
-        print(player + " is dead!");
+        print(player.name + " is dead!");
+    }
+
+    internal void RegisterEnemyDeath(EnemyStats.AIController type, Player player)
+    {
+        print("Register Enemy Death is not implemented!");
     }
 }
