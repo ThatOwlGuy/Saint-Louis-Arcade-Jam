@@ -11,7 +11,6 @@ public class Enemy : MonoBehaviour {
     public Health hp;
     private Rigidbody2D rb;
     public MagicProjectile projectile;
-    private bool rotating = false;
 
     public void Start()
     {
@@ -52,9 +51,6 @@ public class Enemy : MonoBehaviour {
             //If we're int eh attack radius...
             if (distance <= stats.attackRadius)
             {
-                //Start facing the player (if we're not already)
-                if(!rotating)
-                    StartCoroutine(RotateTowards(ClosestMage()));
 
                 //Give a beat for rotating
                 yield return new WaitForSeconds(1.5f);
@@ -76,8 +72,13 @@ public class Enemy : MonoBehaviour {
         Animator animator = GetComponent<Animator>();
 
         while (!animator.GetCurrentAnimatorStateInfo(0).IsName("Fire"))
-            yield return new WaitForEndOfFrame();
-
+        {
+            if (ClosestMage().y > transform.position.y)
+                rb.velocity = Vector3.up;
+            else
+                rb.velocity = Vector3.down;
+            yield return new WaitForSeconds(stats.refreshRate);
+        }
 
         CastProjectile();
     }
@@ -89,10 +90,14 @@ public class Enemy : MonoBehaviour {
             float distance = Vector3.Distance(ClosestMage(), transform.position);
             if (distance <= stats.attackRadius)
             {
-                if(!rotating)
-                    StartCoroutine(RotateTowards(ClosestMage()));
-
+                rb.velocity = stats.speed * ClosestMage() - transform.position;
             }
+            else
+            {
+                rb.velocity = Vector3.down;
+            }
+
+            yield return new WaitForSeconds(stats.refreshRate);
         }
     }
 
@@ -108,21 +113,25 @@ public class Enemy : MonoBehaviour {
 
     private void CastProjectile()
     {
-        /*//Set the direction of the projectile (since shooty bois will be ont he left or right side of the screen)
+        //Set the direction of the projectile (since shooty bois will be ont he left or right side of the screen)
         Quaternion projectileDirection;
         if (transform.position.x > 0)
-            projectileDirection = Quaternion.Euler;
+            projectileDirection = Quaternion.Euler(Vector3.left);
         else
-            projectileDirection = Quater
+            projectileDirection = Quaternion.Euler(Vector3.right);
 
+        //Instantiate the projectile
         Rigidbody2D projectile;
         projectile = Instantiate(stats.attack.gameObject, transform.position, transform.rotation).GetComponent<Rigidbody2D>();
 
-        projectile.velocity = transform.forward * stats.speed;
+        //Set the projectile's caster and damage
+        MagicProjectile mp = projectile.GetComponent<MagicProjectile>();
+        mp.SetCaster(gameObject);
+        mp.SetDamage(stats.damage);
 
-        Destroy(projectile.gameObject, stats.attackDuration);*/
-
-        print("No shooty :(");
+        //and now, actually shoot the projectile
+        projectile.velocity = transform.up * stats.speed;
+        Destroy(projectile.gameObject, stats.attackDuration);
     }
 
     private Vector3 ClosestMage()
@@ -160,21 +169,6 @@ public class Enemy : MonoBehaviour {
     {
         if (other.gameObject.GetComponent<Mage>() != null)
             other.GetComponent<Health>().DealDamage(stats.damage);
-    }
-
-    private IEnumerator RotateTowards(Vector3 target)
-    {
-        rotating = true;
-
-        Quaternion targetRotation = Quaternion.LookRotation(target - transform.position);
-
-        while(transform.rotation != targetRotation)
-        {
-            transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime);
-            yield return new WaitForEndOfFrame();
-        }
-
-        rotating = false;
     }
     #endregion END: Common Behaviours
 }
