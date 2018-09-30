@@ -7,6 +7,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour {
 
     #region Variables
+    public Animator animator;
     private InputHelper input;
     private Rigidbody2D rb;
     public float speed;
@@ -20,6 +21,7 @@ public class PlayerMovement : MonoBehaviour {
 
     //Takes in the inptu every frame
     public void Update(){
+
         rb.velocity = GetInputVelocity() * speed;
     }
 
