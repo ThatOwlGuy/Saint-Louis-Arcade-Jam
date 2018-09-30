@@ -26,6 +26,6 @@ public class CountDownTimer : MonoBehaviour {
         var displaySeconds = System.Math.Ceiling(timeLeft);
         var displayMinutes = System.Math.Floor(displaySeconds / 60);
         displaySeconds = displaySeconds % 60;
-        timerText.text = string.Format("{0}:{1}", displayMinutes, displaySeconds);
+        timerText.text = string.Format("{0}:{1:00}", displayMinutes, displaySeconds);
     }
 }
