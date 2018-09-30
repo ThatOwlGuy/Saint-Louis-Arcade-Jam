@@ -18,7 +18,7 @@ public class MagicProjectile : MonoBehaviour
         damage = dmg;
     }
 
-    private void OnTriggerStay2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == caster.tag)
             return;
@@ -39,5 +39,16 @@ public class MagicProjectile : MonoBehaviour
         {
             print(other.name + " does not have health");
         }
+    }
+
+    private void Awake()
+    {
+        StartCoroutine(WaitToDestroy(0.2f));
+    }
+
+    IEnumerator WaitToDestroy(float time)
+    {
+        yield return new WaitForSeconds(time);
+        Destroy(this.gameObject);
     }
 }
