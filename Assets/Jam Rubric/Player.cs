@@ -17,21 +17,6 @@ public class Player : MonoBehaviour {
 
     // Update is called once per frame
     virtual public void Update () {
-		if (Input.GetKeyDown(input.button1))
-        {
-            score += 1;
-        }
-        if (Input.GetKeyDown(input.button2))
-        {
-            score -= 1;
-        }
-        if (score < 0)
-        {
-            score = 0;
-        }
-        if (score > 999999)
-        {
-            score = 999999;
-        }
+
 	}
 }

@@ -14,9 +14,9 @@ public class EnemyStats : ScriptableObject {
     public float attackRadius;
     public enum AIController
     {
-        Charge,
-        Shoot,
-        Slash
+        Charge = 5,
+        Shoot = 25,
+        Slash = 10
     }
     public AIController type;
     public float refreshRate;   //In seconds. Not per second

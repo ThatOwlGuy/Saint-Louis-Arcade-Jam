@@ -12,6 +12,7 @@ public class DeathHandler : MonoBehaviour {
 
     internal void RegisterEnemyDeath(EnemyStats.AIController type, Player player)
     {
+        player.score += (int)type;
         print("Register Enemy Death is not implemented!");
     }
 }
