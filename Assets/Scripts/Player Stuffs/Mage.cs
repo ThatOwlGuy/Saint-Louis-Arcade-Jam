@@ -42,7 +42,10 @@ public class Mage : Player {
         sprite.sprite = stats.spriteSheet;
 
         //We're also just going to color them according to which player it is.
-
+        if (playerIndex == Index.One)
+            sprite.color = new Color(0f, 0f, 0.75f, 1f);
+        else
+            sprite.color = new Color(1f, 0.5f, 0f, 1f);
     }
 
     #endregion END: Initialization

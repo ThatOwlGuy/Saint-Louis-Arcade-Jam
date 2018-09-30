@@ -35,5 +35,9 @@ public class MagicProjectile : MonoBehaviour
 
             ohp.DealDamage(damage);
         }
+        else
+        {
+            print(other.name + " does not have health");
+        }
     }
 }
