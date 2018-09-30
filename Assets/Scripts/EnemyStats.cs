@@ -8,7 +8,10 @@ public class EnemyStats : ScriptableObject {
     public Sprite spriteSheet;
     public int hp;
     public int damage;
+    public MagicProjectile attack;
+    public float attackDuration;
     public float speed;
+    public float attackRadius;
     public enum AIController
     {
         Charge,

@@ -11,6 +11,7 @@ public class Enemy : MonoBehaviour {
     public Health hp;
     private Rigidbody2D rb;
     public MagicProjectile projectile;
+    private bool rotating = false;
 
     public void Start()
     {
@@ -42,29 +43,94 @@ public class Enemy : MonoBehaviour {
 
     private IEnumerator ChargeBehavior()
     {
-        throw new NotImplementedException();
+        //Start moving when we begin
+        rb.velocity = Vector3.down;
+        while (true)
+        {
+            //See where the closest mage is
+            float distance = Vector3.Distance(ClosestMage(), transform.position);
+
+            //If we're int eh attack radius...
+            if (distance <= stats.attackRadius)
+            {
+                //Start facing the player (if we're not already)
+                if(!rotating)
+                    StartCoroutine(RotateTowards(ClosestMage()));
+
+                //Give a beat for rotating
+                yield return new WaitForSeconds(1.5f);
+
+                //And charge the player
+                rb.velocity = ClosestMage() - transform.position * stats.speed * 2;
+                CastAreaSpell();
+            }
+
+            //wait for the refresh to start again
+            yield return new WaitForSeconds(stats.refreshRate);
+        }
     }
 
     private IEnumerator ShootyBoiBehavior()
     {
-        throw new NotImplementedException();
+        while(true)
+        {
+            //Face the player (unless we're already trying to
+            if(!rotating)
+                StartCoroutine(RotateTowards(ClosestMage()));
+
+            //if we're in attack radius, Shsoot
+            float distance = Vector3.Distance(ClosestMage(), transform.position);
+            if (distance <= stats.attackRadius)
+            {
+                CastProjectile();
+            }
+
+            yield return new WaitForSeconds(stats.refreshRate);
+        }
     }
 
     private IEnumerator SlashBehaviour()
     {
-        throw new NotImplementedException();
+        while (true)
+        {
+            float distance = Vector3.Distance(ClosestMage(), transform.position);
+            if (distance <= stats.attackRadius)
+            {
+                if(!rotating)
+                    StartCoroutine(RotateTowards(ClosestMage()));
+
+            }
+        }
     }
 
 
     #region Common Behaviours
-    private Mage ClosestMage()
+    private void CastAreaSpell()
+    {
+        Rigidbody2D projectile;
+        projectile = Instantiate(stats.attack.gameObject, transform.position, transform.rotation).GetComponent<Rigidbody2D>();
+
+        Destroy(projectile.gameObject, stats.attackDuration);
+    }
+
+    private void CastProjectile()
+    {
+        Rigidbody2D projectile;
+        projectile = Instantiate(stats.attack.gameObject, transform.position, transform.rotation).GetComponent<Rigidbody2D>();
+
+        projectile.velocity = transform.forward * stats.speed;
+
+        Destroy(projectile.gameObject, stats.attackDuration);
+    }
+
+    private Vector3 ClosestMage()
     {
         //look for mages
         Mage[] mages = FindObjectsOfType<Mage>();
 
         //return null if there are no mages
         if(mages.Length != 0)
-            return null;
+            return Vector3.zero;
 
         //If there is only one mage, then that is the closest mage
         Mage closestMage = mages[0];
@@ -85,7 +151,7 @@ public class Enemy : MonoBehaviour {
             }
         }
 
-        return closestMage;
+        return closestMage.transform.position;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -96,6 +162,8 @@ public class Enemy : MonoBehaviour {
 
     private IEnumerator RotateTowards(Vector3 target)
     {
+        rotating = true;
+
         Quaternion targetRotation = Quaternion.LookRotation(target - transform.position);
 
         while(transform.rotation != targetRotation)
@@ -103,6 +171,8 @@ public class Enemy : MonoBehaviour {
             transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime);
             yield return new WaitForEndOfFrame();
         }
+
+        rotating = false;
     }
     #endregion END: Common Behaviours
 }
