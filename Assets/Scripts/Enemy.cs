@@ -26,19 +26,18 @@ public class Enemy : MonoBehaviour {
         sprite.sprite = stats.spriteSheet;
         sprite.color = new Color(1.0f, 0f, 0f, 1.0f);
 
-        IEnumerator aiController;
+        IEnumerator aiController = ChargeBehavior();
 
-        if (stats.type == EnemyStats.AIController.Charge)
+        if (stats.type == EnemyStats.AIController.Shoot)
         {
-            aiController = ChargeBehavior();
-        }else if (stats.type == EnemyStats.AIController.Shoot)
-        {
-            aiController = ShootyBoiBehavior();
+            aiController = ShootBehavior();
         }
         else if (stats.type == EnemyStats.AIController.Slash)
         {
-            aiController = SlashBehaviour();
+            aiController = SlashBehavior();
         }
+
+        StartCoroutine(aiController);
     }
 
     private IEnumerator ChargeBehavior()
@@ -70,26 +69,20 @@ public class Enemy : MonoBehaviour {
         }
     }
 
-    private IEnumerator ShootyBoiBehavior()
+    private IEnumerator ShootBehavior()
     {
-        while(true)
-        {
-            //Face the player (unless we're already trying to
-            if(!rotating)
-                StartCoroutine(RotateTowards(ClosestMage()));
+        yield return new WaitForEndOfFrame();
 
-            //if we're in attack radius, Shsoot
-            float distance = Vector3.Distance(ClosestMage(), transform.position);
-            if (distance <= stats.attackRadius)
-            {
-                CastProjectile();
-            }
+        Animator animator = GetComponent<Animator>();
 
-            yield return new WaitForSeconds(stats.refreshRate);
-        }
+        while (!animator.GetCurrentAnimatorStateInfo(0).IsName("Fire"))
+            yield return new WaitForEndOfFrame();
+
+
+        CastProjectile();
     }
 
-    private IEnumerator SlashBehaviour()
+    private IEnumerator SlashBehavior()
     {
         while (true)
         {
@@ -115,12 +108,21 @@ public class Enemy : MonoBehaviour {
 
     private void CastProjectile()
     {
+        /*//Set the direction of the projectile (since shooty bois will be ont he left or right side of the screen)
+        Quaternion projectileDirection;
+        if (transform.position.x > 0)
+            projectileDirection = Quaternion.Euler;
+        else
+            projectileDirection = Quater
+
         Rigidbody2D projectile;
         projectile = Instantiate(stats.attack.gameObject, transform.position, transform.rotation).GetComponent<Rigidbody2D>();
 
         projectile.velocity = transform.forward * stats.speed;
 
-        Destroy(projectile.gameObject, stats.attackDuration);
+        Destroy(projectile.gameObject, stats.attackDuration);*/
+
+        print("No shooty :(");
     }
 
     private Vector3 ClosestMage()
