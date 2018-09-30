@@ -36,7 +36,6 @@ public class Enemy : MonoBehaviour {
         }
         else if (stats.type == EnemyStats.AIController.Slash)
         {
-            print("A slash behavior");
             StartCoroutine(SlashBehavior());
         }
     }
@@ -54,11 +53,11 @@ public class Enemy : MonoBehaviour {
             if (distance <= stats.attackRadius)
             {
 
-                //Give a beat for rotating
+                //Give a beat for preparing to attack
                 yield return new WaitForSeconds(1.5f);
 
                 //And charge the player
-                rb.velocity = ClosestMage() - transform.position * stats.speed * 2;
+                rb.velocity = (ClosestMage() - transform.position).normalized * stats.speed;
                 CastAreaSpell();
             }
 
@@ -73,13 +72,11 @@ public class Enemy : MonoBehaviour {
 
         Animator animator = GetComponent<Animator>();
 
+        rb.velocity = Vector3.down;
+
         while (!animator.GetCurrentAnimatorStateInfo(0).IsName("Fire"))
         {
-            if (ClosestMage().y > transform.position.y)
-                rb.velocity = Vector3.up;
-            else
-                rb.velocity = Vector3.down;
-            yield return new WaitForSeconds(stats.refreshRate);
+            yield return new WaitForEndOfFrame();
         }
 
         CastProjectile();
@@ -93,7 +90,7 @@ public class Enemy : MonoBehaviour {
 
             if (distance <= stats.attackRadius)
             {
-                rb.velocity = (ClosestMage() - transform.position) * stats.speed;
+                rb.velocity = (ClosestMage() - transform.position).normalized * stats.speed;
 
                 if (distance < 0.75f)
                 {
@@ -155,7 +152,6 @@ public class Enemy : MonoBehaviour {
         //return null if there are no mages
         if (mages.Length == 0)
         {
-            print("NO mages found!");
             return Vector3.zero;
         }
 

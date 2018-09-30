@@ -17,7 +17,7 @@ public class StartGameOnButtonPress : MonoBehaviour {
 
     private bool ButtonIsPressed()
     {
-        //ONly four of the inputs will be taken for the buttons so that
+        //Only four of the inputs will be taken for the buttons so that
         //the joystick will not trigger a game start
         return Input.GetKey(input.left) | Input.GetKey(input.right) | Input.GetKey(input.up) | Input.GetKey(input.down);
     }
