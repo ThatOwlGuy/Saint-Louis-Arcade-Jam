@@ -225,6 +225,26 @@ Prefab:
       propertyPath: player
       value: 
       objectReference: {fileID: 1762280030}
+    - target: {fileID: 224113854502084760, guid: 5cea24413ce2c2742a2b812f6d987642,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -19
+      objectReference: {fileID: 0}
+    - target: {fileID: 224113854502084760, guid: 5cea24413ce2c2742a2b812f6d987642,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 224203854601001322, guid: 5cea24413ce2c2742a2b812f6d987642,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -34.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114902291657304726, guid: 5cea24413ce2c2742a2b812f6d987642,
+        type: 2}
+      propertyPath: m_Text
+      value: Best Score
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5cea24413ce2c2742a2b812f6d987642, type: 2}
   m_IsPrefabAsset: 0
