@@ -15,8 +15,8 @@ MonoBehaviour:
   hp: 1
   damage: 1
   attack: {fileID: 114155737395904896, guid: e795b692683e11f448b8efdfa7d7f5d5, type: 2}
-  attackDuration: 0.75
-  speed: 4
-  attackRadius: 0.75
+  attackDuration: 5
+  speed: 1
+  attackRadius: 10
   type: 10
   refreshRate: 1

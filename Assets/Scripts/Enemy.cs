@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Health))]
 [RequireComponent(typeof(Rigidbody2D))]
@@ -25,18 +26,19 @@ public class Enemy : MonoBehaviour {
         sprite.sprite = stats.spriteSheet;
         sprite.color = new Color(1.0f, 0f, 0f, 1.0f);
 
-        IEnumerator aiController = ChargeBehavior();
-
+        if(stats.type == EnemyStats.AIController.Charge)
+        {
+            StartCoroutine(ChargeBehavior());
+        }
         if (stats.type == EnemyStats.AIController.Shoot)
         {
-            aiController = ShootBehavior();
+            StartCoroutine(ShootBehavior());
         }
         else if (stats.type == EnemyStats.AIController.Slash)
         {
-            aiController = SlashBehavior();
+            print("A slash behavior");
+            StartCoroutine(SlashBehavior());
         }
-
-        StartCoroutine(aiController);
     }
 
     private IEnumerator ChargeBehavior()
@@ -88,9 +90,15 @@ public class Enemy : MonoBehaviour {
         while (true)
         {
             float distance = Vector3.Distance(ClosestMage(), transform.position);
+
             if (distance <= stats.attackRadius)
             {
-                rb.velocity = stats.speed * ClosestMage() - transform.position;
+                rb.velocity = (ClosestMage() - transform.position) * stats.speed;
+
+                if (distance < 0.75f)
+                {
+                    CastAreaSpell();
+                }
             }
             else
             {
@@ -107,6 +115,11 @@ public class Enemy : MonoBehaviour {
     {
         Rigidbody2D projectile;
         projectile = Instantiate(stats.attack.gameObject, transform.position, transform.rotation).GetComponent<Rigidbody2D>();
+
+        //Set the projectile's caster and damage
+        MagicProjectile mp = projectile.GetComponent<MagicProjectile>();
+        mp.SetCaster(gameObject);
+        mp.SetDamage(stats.damage);
 
         Destroy(projectile.gameObject, stats.attackDuration);
     }
@@ -137,21 +150,24 @@ public class Enemy : MonoBehaviour {
     private Vector3 ClosestMage()
     {
         //look for mages
-        Mage[] mages = FindObjectsOfType<Mage>();
+        GameObject[] mages = GameObject.FindGameObjectsWithTag("Player");
 
         //return null if there are no mages
-        if(mages.Length != 0)
+        if (mages.Length == 0)
+        {
+            print("NO mages found!");
             return Vector3.zero;
+        }
 
         //If there is only one mage, then that is the closest mage
-        Mage closestMage = mages[0];
+        GameObject closestMage = mages[0];
 
         //If both mages are present, then see which one is closer
         if (mages.Length != 1)
         {
             float minDistance = float.MaxValue;
 
-            foreach (Mage mage in mages)
+            foreach (GameObject mage in mages)
             {
                 float newDistance = Vector3.Distance(transform.position, mage.transform.position);
                 if (newDistance < minDistance)
