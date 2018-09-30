@@ -11,10 +11,9 @@ public class EnemyStats : ScriptableObject {
     public float speed;
     public enum AIController
     {
-        FastBoi,
-        ShootyBoi,
-        SlowBoi,
-        DumbBoi
+        Charge,
+        Shoot,
+        Slash
     }
     public AIController type;
     public float refreshRate;   //In seconds. Not per second

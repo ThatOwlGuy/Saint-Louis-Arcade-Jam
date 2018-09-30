@@ -25,79 +25,36 @@ public class Enemy : MonoBehaviour {
         sprite.sprite = stats.spriteSheet;
         sprite.color = new Color(1.0f, 0f, 0f, 1.0f);
 
-        if (stats.type == EnemyStats.AIController.FastBoi)
+        IEnumerator aiController;
+
+        if (stats.type == EnemyStats.AIController.Charge)
         {
-            StartCoroutine(FastBoiBehaviour());
-        }else if (stats.type == EnemyStats.AIController.ShootyBoi)
+            aiController = ChargeBehavior();
+        }else if (stats.type == EnemyStats.AIController.Shoot)
         {
-            StartCoroutine(ShootyBoiBehaviour());
+            aiController = ShootyBoiBehavior();
         }
-        else if (stats.type == EnemyStats.AIController.SlowBoi)
+        else if (stats.type == EnemyStats.AIController.Slash)
         {
-            StartCoroutine(SlowBoiBehaviour());
-        }
-        else
-        {
-            DumbBoiBehaviour();
+            aiController = SlashBehaviour();
         }
     }
 
-    private IEnumerator FastBoiBehaviour()
+    private IEnumerator ChargeBehavior()
     {
-        while(hp.currentHealth > 0)
-        {
-            rb.velocity = transform.forward * stats.speed;
-            if (ClosestMage() != null)
-                StartCoroutine(RotateTowards(ClosestMage().transform.position));
-            yield return new WaitForSeconds(stats.refreshRate);
-        }
+        throw new NotImplementedException();
     }
 
-    private IEnumerator ShootyBoiBehaviour()
+    private IEnumerator ShootyBoiBehavior()
     {
-        while (hp.currentHealth > 0)
-        {
-            if(ClosestMage() != null)
-                StartCoroutine(RotateTowards(ClosestMage().transform.position));
-
-            if (Vector2.Distance(transform.position, ClosestMage().transform.position) < 5)
-                Shoot();
-            else
-            {
-                rb.velocity = transform.forward * stats.speed;
-            }
-
-            yield return new WaitForSeconds(stats.refreshRate);
-        }
-
+        throw new NotImplementedException();
     }
 
-    private void Shoot()
+    private IEnumerator SlashBehaviour()
     {
-        //Stop to shoot
-        rb.velocity = Vector2.zero;
-        
-        Rigidbody2D clone;
-        clone = Instantiate(projectile.gameObject, transform.position, Quaternion.identity).GetComponent<Rigidbody2D>();
-
-        clone.velocity = transform.forward * 5f;
+        throw new NotImplementedException();
     }
 
-    private IEnumerator SlowBoiBehaviour()
-    {
-        while (hp.currentHealth > 0)
-        {
-            if (ClosestMage() != null)
-                StartCoroutine(RotateTowards(ClosestMage().transform.position));
-            rb.velocity = transform.forward * stats.speed;
-            yield return new WaitForSeconds(stats.refreshRate);
-        }
-    }
-
-    private void DumbBoiBehaviour()
-    {
-        rb.velocity = new Vector3(0f, -stats.speed, 0f);
-    }
 
     #region Common Behaviours
     private Mage ClosestMage()
