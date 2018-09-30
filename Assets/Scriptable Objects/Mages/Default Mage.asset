@@ -13,6 +13,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteSheet: {fileID: 21300000, guid: faa5dfd88e7fc4b429fd75c058e556cf, type: 3}
   hp: 3
-  movementSpeed: 1
-  primarySpell: {fileID: 11400000, guid: 655e2e69987e9854d8f30da33ab11f04, type: 2}
-  secondarySpell: {fileID: 11400000, guid: 655e2e69987e9854d8f30da33ab11f04, type: 2}
+  movementSpeed: 3
+  primarySpell: {fileID: 11400000, guid: 932e3f6c8d352c643b9986493806d55b, type: 2}
+  secondarySpell: {fileID: 11400000, guid: 928cf091e03d2334b930005a228249b8, type: 2}
