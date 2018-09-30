@@ -75,6 +75,8 @@
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\EnemyStats.cs" />
     <Compile Include="Assets\Scripts\Miscellaneous\CorpseSlide.cs" />
+    <Compile Include="Assets\Scripts\Miscellaneous\EndScreenManagement.cs" />
+    <Compile Include="Assets\Scripts\Miscellaneous\StartGameOnButtonPress.cs" />
     <Compile Include="Assets\Scripts\Player Stuffs\AttackSpell.cs" />
     <Compile Include="Assets\Scripts\Player Stuffs\Health.cs" />
     <Compile Include="Assets\Scripts\Player Stuffs\Mage.cs" />
