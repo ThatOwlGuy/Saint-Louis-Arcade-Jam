@@ -40,6 +40,7 @@ public class Mage : Player {
         //For now we're just going to apply the entire sheet since animations aren't in yet
         SpriteRenderer sprite = GetComponent<SpriteRenderer>();
         sprite.sprite = stats.spriteSheet;
+
         //We're also just going to color them according to which player it is.
 
     }
