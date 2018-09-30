@@ -7,20 +7,12 @@ public class DeathHandler : MonoBehaviour {
 
     public void RegisterPlayerDeath(Player player)
     {
-        Player[] players = FindObjectsOfType<Player>();
-
-        if (players.Length == 0)
-            StartGameOver();
+        print(player.name + " is dead!");
     }
 
-    public void RegisterEnemyDeath(EnemyStats.AIController type, Player player)
+    internal void RegisterEnemyDeath(EnemyStats.AIController type, Player player)
     {
         player.score += (int)type;
         print("Register Enemy Death is not implemented!");
-    }
-
-    private void StartGameOver()
-    {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(2);
     }
 }
