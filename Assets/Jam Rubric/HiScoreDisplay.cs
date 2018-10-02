@@ -6,20 +6,19 @@ using UnityEngine.UI;
 
 public class HiScoreDisplay : MonoBehaviour {
 
-    private Text text;
-    private int highScoreInt;
+    public Player playerOne;
+    public Player playerTwo;
 
-    private Vector2Int localScore;
+    private Text text;
+    private int highScore = 0;
 
     void Start () {
         text = GetComponent<Text>();
-        highScoreInt = PlayerPrefs.GetInt("highScore", 0);
-        text.text = string.Format("Best Score {0}", highScoreInt.ToString("D6"));
-    }
+	}
 	
 	// Update is called once per frame
 	void Update () {
-
-        
+        highScore = Math.Max(Math.Max(playerOne.score, playerTwo.score), highScore);
+        text.text = string.Format("Hi-{0}", highScore.ToString("D6"));
 	}
 }

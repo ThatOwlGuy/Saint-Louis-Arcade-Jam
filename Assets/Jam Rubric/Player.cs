@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(InputHelper))]
 public class Player : MonoBehaviour {
 
     public enum Index
@@ -13,10 +14,10 @@ public class Player : MonoBehaviour {
 
     public int score = 0;
     protected InputHelper input;
-    public Index playerIndex = Index.One;
+    public Player.Index playerIndex = Player.Index.One;
 
-    // Update is called once per frame
-    virtual public void Update () {
-
-	}
+    private void Awake()
+    {
+        input = GetComponent<InputHelper>();
+    }
 }
