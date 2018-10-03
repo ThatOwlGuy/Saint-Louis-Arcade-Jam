@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Saint-Louis-Arcade-Jam", "Saint-Louis-Arcade-Jam.csproj", "{413D4CEC-623F-C81B-1051-228B7C211584}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{475960E1-C1A2-8405-C1B2-817B9DC14ACA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +9,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{413D4CEC-623F-C81B-1051-228B7C211584}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{413D4CEC-623F-C81B-1051-228B7C211584}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{413D4CEC-623F-C81B-1051-228B7C211584}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{413D4CEC-623F-C81B-1051-228B7C211584}.Release|Any CPU.Build.0 = Release|Any CPU
+		{475960E1-C1A2-8405-C1B2-817B9DC14ACA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{475960E1-C1A2-8405-C1B2-817B9DC14ACA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{475960E1-C1A2-8405-C1B2-817B9DC14ACA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{475960E1-C1A2-8405-C1B2-817B9DC14ACA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
