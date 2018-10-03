@@ -85,6 +85,9 @@
     <None Include="Assets\Jam Rubric\Fonts\codeman38_press-start-2p\LICENSE.txt" />
     <None Include="Assets\Jam Rubric\Fonts\freaky-fonts_emulogic\readme.txt" />
     <None Include="Assets\Jam Rubric\Fonts\genshichi-yasui_gradius\ô╟é±é┼é╦.txt" />
+    <Reference Include="UnityEditor.StandardEvents">
+      <HintPath>C:/Users/Sebas/Documents/Work/Boo Scripts Projects/Boo Script Grammar Package/Saint-Louis-Arcade-Jam/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/Sebas/Documents/Work/Boo Scripts Projects/Boo Script Grammar Package/Saint-Louis-Arcade-Jam/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
