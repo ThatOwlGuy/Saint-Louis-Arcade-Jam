@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour {
     #region Variables
     private InputHelper input;
     private Rigidbody2D rb;
+    public bool reactToDamage;
     public float speed;
     #endregion END: Variables
 
@@ -20,6 +21,12 @@ public class PlayerMovement : MonoBehaviour {
 
     //Takes in the inptu every frame
     public void Update(){
+
+        //if we're supposed to react to damage and we're in recovery, don'tmove
+        if (reactToDamage)
+            if (GetComponent<Health>().inRecovery)
+                return;
+
         rb.velocity = GetInputVelocity() * speed;
     }
 

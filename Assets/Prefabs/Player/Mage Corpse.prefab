@@ -20,11 +20,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4784269053400624}
   - component: {fileID: 212631330777871314}
-  - component: {fileID: 114144618164708742}
   - component: {fileID: 50551789624657184}
-  - component: {fileID: 114741729470656804}
-  - component: {fileID: 114406434461625308}
-  - component: {fileID: 114098641949967762}
+  - component: {fileID: 114184210686047752}
   m_Layer: 0
   m_Name: Mage Corpse
   m_TagString: Untagged
@@ -65,7 +62,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &114098641949967762
+--- !u!114 &114184210686047752
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -73,52 +70,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1401049587859854}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6ff4beb01f1c4145b6b51d7d5ad602d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  score: 0
-  playerIndex: 1
-  stats: {fileID: 11400000, guid: b89d753e2fadffb479525dce2f39d4a8, type: 2}
---- !u!114 &114144618164708742
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1401049587859854}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 293c2d2747a5ba84ab86d23df9e0ffae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  up: 273
-  down: 274
-  left: 276
-  right: 275
-  button1: 46
-  button2: 47
---- !u!114 &114406434461625308
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1401049587859854}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b679143b8db36b448faf11f19bb57e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 0
-  currentHealth: 0
-  corpse: {fileID: 0}
---- !u!114 &114741729470656804
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1401049587859854}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1080a4de8351fa4b9701cb35647f09e, type: 3}
+  m_Script: {fileID: 11500000, guid: ff0e5157746054a4e9b9e2d9c5cebab4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1

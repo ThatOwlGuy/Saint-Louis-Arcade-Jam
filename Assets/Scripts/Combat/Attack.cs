@@ -8,6 +8,8 @@ public class Attack : MonoBehaviour
     public int damage;
     public float duration;
     private Rigidbody2D rb;
+    public bool hasKnockBack;
+    public bool destroyOnTouch;
 
     private void Start()
     {
@@ -33,8 +35,23 @@ public class Attack : MonoBehaviour
             return;
 
         if (IsEnemy(other.tag))
+        {
             //If they are then apply damage
             ApplyDamage(other.GetComponent<Health>());
+
+            //If we hit, then dissapear if that's what we're supposed to do
+            if (destroyOnTouch)
+                Destroy(gameObject);
+
+            //If we hit, then push the other character if that's what we're supposed to do
+            if (hasKnockBack)
+                KnockBack(other.GetComponent<Rigidbody2D>());
+        }
+    }
+
+    private void KnockBack(Rigidbody2D adversary)
+    {
+        adversary.velocity = (adversary.transform.position - transform.position).normalized * 10f;
     }
 
     private bool IsEnemy(string otherTag)
@@ -42,9 +59,12 @@ public class Attack : MonoBehaviour
         return otherTag != tag;
     }
 
-
     private void ApplyDamage(Health enemyHp)
     {
+        //Sometimes enemies will die in the middle of an attack
+        if (enemyHp == null)
+            return;
+
         if (enemyHp.inRecovery)
             return;
 

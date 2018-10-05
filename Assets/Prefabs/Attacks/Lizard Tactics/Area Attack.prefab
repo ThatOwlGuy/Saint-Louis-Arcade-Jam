@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 114155737395904896}
   m_Layer: 0
   m_Name: Area Attack
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1832086490919466}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.54, y: 1.92, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -74,9 +74,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.15}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 1.06
 --- !u!114 &114155737395904896
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -85,6 +85,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1832086490919466}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a62b4fa3b00a9a4682d7572a6576847, type: 3}
+  m_Script: {fileID: 11500000, guid: 32abdcebbde09fa4783277d72873a9ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 2
+  duration: 1
+  hasKnockBack: 1
+  destroyOnTouch: 1

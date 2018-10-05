@@ -33,12 +33,7 @@ public class Mage : Player {
         {
             if (spellSlots[0].onCoolDown == false)
             {
-                print("Cast 1st spell");
-                StartCoroutine(CoolDown(0));
-            }
-            else
-            {
-                print("1st spell on Cooldown");
+                CastSpell(0);
             }
         }
 
@@ -47,14 +42,19 @@ public class Mage : Player {
         {
             if (spellSlots[1].onCoolDown == false)
             {
-                print("Cast 2nd spell");
-                StartCoroutine(CoolDown(1));
-            }
-            else
-            {
-                print("2nd spell on Cooldown");
+                CastSpell(1);
             }
         }
+    }
+
+    private void CastSpell(int spellIndex)
+    {
+        //Instantiate casted Magic
+        GameObject magic;
+        magic = Instantiate(spellSlots[spellIndex].attack.gameObject, transform.position, Quaternion.identity);
+
+        //Start cooldown
+        StartCoroutine(CoolDown(spellIndex));
     }
 
     private IEnumerator CoolDown(int slotIndex)

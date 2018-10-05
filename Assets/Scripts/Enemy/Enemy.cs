@@ -39,7 +39,7 @@ public class Enemy : MonoBehaviour {
         if(ai == AIController.Arrow)
         {
             //flip enemy depending on which side of the screen they're on
-            if (transform.position.x < 0)
+            if (transform.position.x > 0)
                 transform.localScale = new Vector3(-1f, 1f, 1f);
 
             StartCoroutine(ShootBehavior());
@@ -62,19 +62,23 @@ public class Enemy : MonoBehaviour {
         {
             rb.velocity = Vector3.down;
 
-            Animator animator = GetComponent<Animator>();
+            if (Vector3.Distance(ClosestMage(), transform.position) <= attackRadius) {
 
-            if (animator != null)
-            {
-                yield return new WaitForSeconds(refreshRate);
+                Animator animator = GetComponent<Animator>();
 
-                animator.SetBool("Fire Now", true);
+                if (animator != null)
+                {
+                    yield return new WaitForSeconds(refreshRate);
 
-                while (!animator.GetCurrentAnimatorStateInfo(0).IsName("Fire"))
-                    yield return new WaitForEndOfFrame();
+                    animator.SetBool("Fire Now", true);
+
+                    while (!animator.GetCurrentAnimatorStateInfo(0).IsName("Fire"))
+                        yield return new WaitForEndOfFrame();
+                }
+
+                FireArrow();
+
             }
-
-            FireArrow();
 
             yield return new WaitForSeconds(refreshRate);
         }
@@ -85,7 +89,7 @@ public class Enemy : MonoBehaviour {
         Rigidbody2D arrow;
         Transform arrowSpawn = transform.GetChild(0);
         arrow = Instantiate(attack.gameObject, arrowSpawn.position, arrowSpawn.rotation).GetComponent<Rigidbody2D>();
-        arrow.velocity = speed * arrowSpawn.up;
+        arrow.velocity = (speed * arrowSpawn.up) + Vector3.down;
     }
     #endregion END: Archer Lizard
 
@@ -94,7 +98,11 @@ public class Enemy : MonoBehaviour {
     {
         //Start moving when we begin
         rb.velocity = Vector3.down;
-        while (true)
+
+        bool charged = false; ;
+
+        //if we haven't yet charged
+        while (!charged)
         {
             //See where the closest mage is
             float distance = Vector3.Distance(ClosestMage(), transform.position);
@@ -102,12 +110,14 @@ public class Enemy : MonoBehaviour {
             //If we're in the attack radius...
             if (distance <= attackRadius)
             {
+                //FOR TESTING PURPOSES
+                transform.GetChild(0).GetComponent<SpriteRenderer>().color = Color.red;
 
-                //Give a beat for rotating
-                yield return new WaitForSeconds(1.5f);
+                //Give 2 seconds for charge position
+                yield return new WaitForSeconds(1f);
 
                 //And charge the player
-                rb.velocity = ClosestMage() - transform.position * speed * 2;
+                rb.velocity = (ClosestMage() - transform.position).normalized * speed;
             }
 
             //wait for the refresh to start again
@@ -119,26 +129,33 @@ public class Enemy : MonoBehaviour {
     #region Slash Lizard
     private IEnumerator SlashBehavior()
     {
+        rb.velocity = Vector3.down;
+
         while (true)
         {
             float distance = Vector3.Distance(ClosestMage(), transform.position);
 
             if (distance <= attackRadius)
             {
-                rb.velocity = (ClosestMage() - transform.position) * speed;
+                rb.velocity = (ClosestMage() - transform.position).normalized * speed;
 
-                if (distance < 0.75f)
+                if (distance <= 2)
                 {
-                    print("Slash!");
+                    SwordSlash();
+                    yield return new WaitForSeconds(transform.GetChild(1).GetComponent<Attack>().duration);
                 }
             }
-            else
-            {
-                rb.velocity = Vector3.down;
-            }
+            
 
             yield return new WaitForSeconds(refreshRate);
         }
+    }
+
+    private void SwordSlash()
+    {
+        GameObject slash;
+        slash = Instantiate(attack.gameObject, transform.position, Quaternion.identity);
+        slash.transform.SetParent(transform);
     }
     #endregion Slash Lizard
 
@@ -187,9 +204,14 @@ public class Enemy : MonoBehaviour {
             {
                 //Deal damage and push away if not in recovery
                 mageHp.DealDamage(1);
-                other.GetComponent<Rigidbody2D>().velocity = (other.transform.position - transform.position) * 2f;
+                KnockBack(other.GetComponent<Rigidbody2D>());
             }
         }
+    }
+
+    private void KnockBack(Rigidbody2D adversary)
+    {
+        adversary.velocity = (adversary.transform.position - transform.position).normalized * 10f;
     }
     #endregion END: Common Behaviours
 }
