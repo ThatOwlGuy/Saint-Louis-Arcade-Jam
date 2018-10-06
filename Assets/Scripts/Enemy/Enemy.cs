@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -211,7 +212,10 @@ public class Enemy : MonoBehaviour {
 
     private void KnockBack(Rigidbody2D adversary)
     {
-        adversary.velocity = (adversary.transform.position - transform.position).normalized * 10f;
+        Vector3 direction = (adversary.transform.position - transform.position).normalized;
+        direction.x *= 2f;
+
+        adversary.velocity = direction * 10f;
     }
     #endregion END: Common Behaviours
 }

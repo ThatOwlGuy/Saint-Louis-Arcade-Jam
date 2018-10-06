@@ -6,10 +6,14 @@ public class DeathHandler : MonoBehaviour
 { 
     public enum Combatant
     {
+        NULL,
         ThermalMage,
         ElectromagneticMage,
         LizardPerson
     }
+
+    public Player p1;
+    public Player p2;
 
     public void RegisterDeath(Combatant attacker, Combatant victim)
     {
@@ -24,14 +28,11 @@ public class DeathHandler : MonoBehaviour
         else
         {
             if (attacker == Combatant.ThermalMage)
-            {
-                print("Add to Player 1's score");
-            }
+                p1.score += 10;
+                
 
             if (attacker == Combatant.ElectromagneticMage)
-            {
-                print("Add to Player 2's score");
-            }
+                p2.score += 10;
         }
     }
 }

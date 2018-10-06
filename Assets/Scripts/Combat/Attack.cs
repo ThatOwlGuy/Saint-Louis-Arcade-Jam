@@ -10,10 +10,16 @@ public class Attack : MonoBehaviour
     private Rigidbody2D rb;
     public bool hasKnockBack;
     public bool destroyOnTouch;
+    private DeathHandler.Combatant attacker = DeathHandler.Combatant.NULL;
 
     private void Start()
     {
         Destroy(gameObject, duration);
+    }
+
+    public void EstablishSource(DeathHandler.Combatant source)
+    {
+        attacker = source;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -65,20 +71,41 @@ public class Attack : MonoBehaviour
         if (enemyHp == null)
             return;
 
+        //If the enemy is recovering then we can't hurt them again either
         if (enemyHp.inRecovery)
             return;
 
-        //If this is going to kill it, we'll instead report it to the death handler
+        //If this is going to kill it, we'll report it to the death handler
         if(enemyHp.currentHealth - damage <= 0)
         {
-            ReportDeath();
+            //Figure out which kind of death to report
+            DeathHandler.Combatant victim = DeathHandler.Combatant.NULL;
+
+            //If it's tagged enemy, then its a lizard person
+            if (enemyHp.tag == "Enemy")
+                victim = DeathHandler.Combatant.LizardPerson;
+            else    //Otherwise, we'll find out which player based on the mage's playerIndex
+            {
+                Mage player = enemyHp.GetComponent<Mage>();
+
+                if (player.playerIndex == Player.Index.One)
+                    victim = DeathHandler.Combatant.ThermalMage;
+
+                if (player.playerIndex == Player.Index.Two)
+                    victim = DeathHandler.Combatant.ElectromagneticMage;
+            }
+
+            ReportDeath(victim);
         }
 
         enemyHp.DealDamage(damage);
     }
 
-    protected virtual void ReportDeath()
+    private void ReportDeath(DeathHandler.Combatant victim)
     {
+        print(attacker + " killed " + victim);
+
         DeathHandler dh = FindObjectOfType<DeathHandler>();
+        dh.RegisterDeath(attacker, victim);
     }
 }

@@ -55,7 +55,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1082517712640064}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.54, y: -2.99, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4816940552942094}
@@ -138,6 +138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 371e8b051b557174f8bff257302a7cbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reactToDamage: 0
   speed: 2
 --- !u!114 &114551055143943148
 MonoBehaviour:
@@ -168,11 +169,11 @@ MonoBehaviour:
   score: 0
   playerIndex: 1
   spellSlots:
-  - attack: {fileID: 0}
-    coolDownTime: 0
+  - attack: {fileID: 114714638735482322, guid: b3720dc20d8fcfa42a179741bfe21a73, type: 2}
+    coolDownTime: 1
     onCoolDown: 0
-  - attack: {fileID: 0}
-    coolDownTime: 0
+  - attack: {fileID: 114560465120856838, guid: 924f7c4796a0f8948a622794426ed199, type: 2}
+    coolDownTime: 1
     onCoolDown: 0
 --- !u!212 &212527402743212872
 SpriteRenderer:
@@ -209,7 +210,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e7d5afcfe1802754e82045d1c3cfbb0c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7e9e48a3ab943ce47b4d9af1a49cb25d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

@@ -53,6 +53,17 @@ public class Mage : Player {
         GameObject magic;
         magic = Instantiate(spellSlots[spellIndex].attack.gameObject, transform.position, Quaternion.identity);
 
+        //Tag the spell
+        DeathHandler.Combatant source = DeathHandler.Combatant.NULL;
+
+        if (playerIndex == Index.One)
+            source = DeathHandler.Combatant.ThermalMage;
+
+        if (playerIndex == Index.Two)
+            source = DeathHandler.Combatant.ElectromagneticMage;
+
+        magic.GetComponent<Attack>().EstablishSource(source);
+
         //Start cooldown
         StartCoroutine(CoolDown(spellIndex));
     }
