@@ -13,6 +13,7 @@ public class Enemy : MonoBehaviour {
     private Health hp;
     private Rigidbody2D rb;
     public Attack attack;
+    private Animator animator;
 
     #region Stats
     public float speed;
@@ -36,6 +37,7 @@ public class Enemy : MonoBehaviour {
     {
         hp = GetComponent<Health>();
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponentInChildren<Animator>();
 
         if(ai == AIController.Arrow)
         {
@@ -63,22 +65,18 @@ public class Enemy : MonoBehaviour {
         {
             rb.velocity = Vector3.down;
 
-            if (Vector3.Distance(ClosestMage(), transform.position) <= attackRadius) {
-
-                Animator animator = GetComponent<Animator>();
-
+            if (Vector3.Distance(ClosestMage(), transform.position) <= attackRadius)
+            {
+                Animator animator = GetComponentInChildren<Animator>();
                 if (animator != null)
                 {
                     yield return new WaitForSeconds(refreshRate);
-
-                    animator.SetBool("Fire Now", true);
-
-                    while (!animator.GetCurrentAnimatorStateInfo(0).IsName("Fire"))
-                        yield return new WaitForEndOfFrame();
+                    animator.SetBool("Fire", true);
+                    yield return new WaitForEndOfFrame();
                 }
-
                 FireArrow();
-
+                yield return new WaitForSeconds(.1f);
+                animator.SetBool("Fire", false);
             }
 
             yield return new WaitForSeconds(refreshRate);
@@ -114,8 +112,10 @@ public class Enemy : MonoBehaviour {
                 //FOR TESTING PURPOSES
                 transform.GetChild(0).GetComponent<SpriteRenderer>().color = Color.red;
 
+                animator.SetBool("Charge", true);
+
                 //Give 2 seconds for charge position
-                yield return new WaitForSeconds(1f);
+                yield return new WaitForSeconds(.4f);
 
                 //And charge the player
                 rb.velocity = (ClosestMage() - transform.position).normalized * speed;
@@ -143,11 +143,12 @@ public class Enemy : MonoBehaviour {
                 if (distance <= 2)
                 {
                     SwordSlash();
+                    animator.SetBool("Swing", true);
                     yield return new WaitForSeconds(transform.GetChild(1).GetComponent<Attack>().duration);
+                    animator.SetBool("Swing", false);
                 }
             }
             
-
             yield return new WaitForSeconds(refreshRate);
         }
     }
