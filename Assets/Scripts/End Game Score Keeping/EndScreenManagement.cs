@@ -14,10 +14,11 @@ public class EndScreenManagement : MonoBehaviour {
 
     private int screenIndex = -1;
 
-    public bool screenTaskComplete;
+    public bool screenTaskComplete = false;
 
     public void Start()
     {
+        input = GetComponent<InputHelper>();
         NextScreen();
     }
 
@@ -32,6 +33,8 @@ public class EndScreenManagement : MonoBehaviour {
 
     private void NextScreen()
     {
+        screenIndex++;
+
         GameObject newScreen = null;
 
         switch (screenIndex)
@@ -40,15 +43,20 @@ public class EndScreenManagement : MonoBehaviour {
                 newScreen = currentHighScore;
                 break;
             case 1:
-                if (ScoreKeeping.IsNewHighScore(ScoreKeeping.currentPlayerScores[0]))
+                if (ScoreKeeping.IsNewHighScore(ScoreKeeping.currentPlayerScores[0]) || ScoreKeeping.IsNewHighScore(ScoreKeeping.currentPlayerScores[1]))
                     newScreen = newHighScore;
                 else
                     goto case 2;
                 break;                
             case 2:
+                newScreen = highScoreList;
                 break;
             case 3:
-                newScreen = highScoreList;
+                newScreen = gameOver;
+                break;
+            default:
+                //Load start screen if we've exhasted all steps
+                UnityEngine.SceneManagement.SceneManager.LoadScene(0);
                 break;
         }
 
@@ -61,16 +69,23 @@ public class EndScreenManagement : MonoBehaviour {
     private void LoadScreen(GameObject newScreen)
     {
         //Destroy the old screen
-        Destroy(transform.GetChild(0).gameObject);
+        if(transform.childCount != 0)
+            Destroy(transform.GetChild(0).gameObject);
 
         //Instantiate a new Screen
-        GameObject screen;
-        screen = Instantiate(newScreen, transform.position, Quaternion.identity);
+        RectTransform screen;
+        screen = Instantiate(newScreen, transform.position, Quaternion.identity).GetComponent<RectTransform>();
 
         //Make the screen renderable by making it a child of the canvas
         screen.transform.SetParent(this.transform);
 
+        //Reset offsets to ensure that the screen renders properly
+        screen.offsetMin = new Vector2(0f, 0f);
+        screen.offsetMax = new Vector2(0f, 0f);
+
         screenTaskComplete = false;
+
+        print("Loaded screen");
     }
 
     //Buttons should be set to the directional keys in the helper

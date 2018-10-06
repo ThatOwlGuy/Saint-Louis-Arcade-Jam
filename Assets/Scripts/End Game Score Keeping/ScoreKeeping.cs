@@ -6,7 +6,7 @@ using UnityEngine;
 
 public static class ScoreKeeping {
 
-    public static int[] currentPlayerScores = new int[2];
+    public static int[] currentPlayerScores = { 20, 10 };
     public static PlayerScore[] highScores;
 
     public static bool IsNewHighScore(int newScore)
@@ -97,4 +97,10 @@ public struct PlayerScore
 {
     public char[] name;
     public int score;
+
+    public PlayerScore(char[] newName, int newScore)
+    {
+        name = newName;
+        score = newScore;
+    }
 }
