@@ -6,9 +6,11 @@ public class SpawnManager : MonoBehaviour {
 
     public Spawner[] spawnerList;
     private bool spawning;
+    private float spawnTime;
 
 	// Use this for initialization
 	void Start () {
+        spawnTime = 12.0f;
         spawning = false;
 	}
 	
@@ -17,7 +19,11 @@ public class SpawnManager : MonoBehaviour {
         if (!spawning)
         {
             spawning = true;
-            StartCoroutine(SpawnWait(5.0f));
+            StartCoroutine(SpawnWait(spawnTime));
+            if(spawnTime > 1.0f)
+            {
+                spawnTime = spawnTime - 0.4f;
+            }
         }
 	}
 
@@ -26,7 +32,7 @@ public class SpawnManager : MonoBehaviour {
         yield return new WaitForSeconds(time);
         foreach (Spawner spawner in spawnerList)
         {
-            spawner.Spawn(0);
+            spawner.Spawn(Mathf.FloorToInt(Random.Range(0.0f, 2.99f)));
         }
         spawning = false;
         yield return 0;

@@ -48,8 +48,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1845340888096822}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 802d243a832c65f49be4e7aa9bbcc918, type: 3}
+  m_Script: {fileID: 11500000, guid: 16415e38dd00eb74ea7b3234f2738dd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   spawnableEnemies:
-  - {fileID: 1485587754478144, guid: b75dec11cc1a6ce47b6ea2b4800cad67, type: 2}
+  - {fileID: 1796665882748120, guid: 3687ce0de3471d642b32da7e6d4b125e, type: 2}
+  - {fileID: 1143665720912224, guid: cc651508656f5fb4e91eecfeae7b3757, type: 2}
+  - {fileID: 1919122330129142, guid: 07fa91260aeca56448d034772056a294, type: 2}

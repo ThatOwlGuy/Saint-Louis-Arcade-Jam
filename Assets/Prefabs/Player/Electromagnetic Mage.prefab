@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4395379182706030}
   - component: {fileID: 212823899942880394}
+  - component: {fileID: 95173920501895970}
   m_Layer: 0
   m_Name: Graphic
   m_TagString: Untagged
@@ -68,7 +69,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1449252746322892}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.532, y: -2.99, z: 0}
+  m_LocalPosition: {x: 1, y: -4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4395379182706030}
@@ -110,6 +111,24 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.05}
   serializedVersion: 2
   m_Radius: 0.26
+--- !u!95 &95173920501895970
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1182012187459688}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 41651ecd7c5f5164584500c1b5d32416, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114364412246151708
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -121,12 +140,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 293c2d2747a5ba84ab86d23df9e0ffae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  up: 273
-  down: 274
-  left: 276
-  right: 275
-  button1: 46
-  button2: 47
+  up: 119
+  down: 115
+  left: 97
+  right: 100
+  button1: 96
+  button2: 49
 --- !u!114 &114916172278172270
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -141,11 +160,11 @@ MonoBehaviour:
   score: 0
   playerIndex: 2
   spellSlots:
-  - attack: {fileID: 0}
-    coolDownTime: 0
+  - attack: {fileID: 114535796891481914, guid: 109bd292295064e4ea67666c12e43a44, type: 2}
+    coolDownTime: 1
     onCoolDown: 0
-  - attack: {fileID: 0}
-    coolDownTime: 0
+  - attack: {fileID: 114180488530613992, guid: 378789df7895dd14ca9800db7382f910, type: 2}
+    coolDownTime: 1
     onCoolDown: 0
 --- !u!114 &114935972615736152
 MonoBehaviour:
@@ -158,6 +177,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 371e8b051b557174f8bff257302a7cbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reactToDamage: 0
   speed: 4
 --- !u!114 &114977790867417258
 MonoBehaviour:
@@ -206,8 +226,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 345546905
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: dff02b37056899a40b90560bcf64d947, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

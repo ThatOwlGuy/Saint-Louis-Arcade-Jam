@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -10,10 +11,30 @@ public class Attack : MonoBehaviour
     private Rigidbody2D rb;
     public bool hasKnockBack;
     public bool destroyOnTouch;
+    private Animator animator;
 
     private void Start()
     {
-        Destroy(gameObject, duration);
+        animator = gameObject.GetComponentInChildren<Animator>();
+        if (animator == null)
+        {
+            Destroy(gameObject, duration);
+        }
+        else
+        {
+            animator.SetBool("start", true);
+            StartCoroutine(RemoveAfterAnimation());
+        }
+    }
+
+    IEnumerator RemoveAfterAnimation()
+    {
+        while (!animator.GetCurrentAnimatorStateInfo(0).IsName("Exit"))
+        {
+            yield return new WaitForSeconds(0.2f);
+        }
+        Destroy(gameObject);
+        yield return null;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
