@@ -12,6 +12,813 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 5
-  lastUpdatedAtString: 2018-10-05T23:34:07.435-05:00
-  initializedAtString: 2018-10-05T16:56:02.902-05:00
-  entries: []
+  lastUpdatedAtString: 2018-10-06T01:32:24.191-05:00
+  initializedAtString: 2018-10-06T00:12:07.007-05:00
+  entries:
+  - path: .vs\Saint-Louis-Arcade-Jam\v15\.suo
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\.vs\Saint-Louis-Arcade-Jam\v15\.suo
+    projectPath: .vs\Saint-Louis-Arcade-Jam\v15\.suo
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: .vs\Saint-Louis-Arcade-Jam\v15\Server\sqlite3\storage.ide-shm
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\.vs\Saint-Louis-Arcade-Jam\v15\Server\sqlite3\storage.ide-shm
+    projectPath: .vs\Saint-Louis-Arcade-Jam\v15\Server\sqlite3\storage.ide-shm
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: .vs\Saint-Louis-Arcade-Jam\v15\Server\sqlite3\storage.ide-wal
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\.vs\Saint-Louis-Arcade-Jam\v15\Server\sqlite3\storage.ide-wal
+    projectPath: .vs\Saint-Louis-Arcade-Jam\v15\Server\sqlite3\storage.ide-wal
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assembly-CSharp.csproj
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Assembly-CSharp.csproj
+    projectPath: Assembly-CSharp.csproj
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assembly-CSharp-Editor-firstpass.csproj
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Assembly-CSharp-Editor-firstpass.csproj
+    projectPath: Assembly-CSharp-Editor-firstpass.csproj
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\Animations.meta
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Assets\Animations.meta
+    projectPath: Assets\Animations.meta
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\Animations\AOEFire.anim
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Assets\Animations\AOEFire.anim
+    projectPath: Assets\Animations\AOEFire.anim
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Animations\AOEFire.anim.meta
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Assets\Animations\AOEFire.anim.meta
+    projectPath: Assets\Animations\AOEFire.anim.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Animations\AOEfire_0.controller
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Assets\Animations\AOEfire_0.controller
+    projectPath: Assets\Animations\AOEfire_0.controller
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Animations\AOEfire_0.controller.meta
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Assets\Animations\AOEfire_0.controller.meta
+    projectPath: Assets\Animations\AOEfire_0.controller.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Animations\AOELightning.anim
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Assets\Animations\AOELightning.anim
+    projectPath: Assets\Animations\AOELightning.anim
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\Animations\FireSpell.controller
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Assets\Animations\FireSpell.controller
+    projectPath: Assets\Animations\FireSpell.controller
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\Animations\LightningSpell.controller
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Assets\Animations\LightningSpell.controller
+    projectPath: Assets\Animations\LightningSpell.controller
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\Animations\LightningsSpell.anim
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Assets\Animations\LightningsSpell.anim
+    projectPath: Assets\Animations\LightningsSpell.anim
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.mdb.meta
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.mdb.meta
+    projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.mdb.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.mdb.meta~427a99e31ada6a5f3171d8861393f98d3f8ad59c.meta
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.mdb.meta~427a99e31ada6a5f3171d8861393f98d3f8ad59c.meta
+    projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.mdb.meta~427a99e31ada6a5f3171d8861393f98d3f8ad59c.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.mdb.meta~HEAD.meta
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.mdb.meta~HEAD.meta
+    projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.mdb.meta~HEAD.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Prefabs\Attacks\Lizard Tactics\Area Attack.prefab
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Assets\Prefabs\Attacks\Lizard
+      Tactics\Area Attack.prefab
+    projectPath: Assets\Prefabs\Attacks\Lizard Tactics\Area Attack.prefab
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\Prefabs\Player\Electromagnetic Mage.prefab
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Assets\Prefabs\Player\Electromagnetic
+      Mage.prefab
+    projectPath: Assets\Prefabs\Player\Electromagnetic Mage.prefab
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\Prefabs\Player\Thermal Mage.prefab
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Assets\Prefabs\Player\Thermal
+      Mage.prefab
+    projectPath: Assets\Prefabs\Player\Thermal Mage.prefab
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\Prefabs\Spells\Primary Electromagnetic Spell.prefab
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Assets\Prefabs\Spells\Primary
+      Electromagnetic Spell.prefab
+    projectPath: Assets\Prefabs\Spells\Primary Electromagnetic Spell.prefab
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\Prefabs\Spells\Primary Thermal Spell.prefab
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Assets\Prefabs\Spells\Primary
+      Thermal Spell.prefab
+    projectPath: Assets\Prefabs\Spells\Primary Thermal Spell.prefab
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\Prefabs\Spells\Secondary Electromagnetic Spell.prefab
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Assets\Prefabs\Spells\Secondary
+      Electromagnetic Spell.prefab
+    projectPath: Assets\Prefabs\Spells\Secondary Electromagnetic Spell.prefab
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\Prefabs\Spells\Secondary Thermal Spell.prefab
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Assets\Prefabs\Spells\Secondary
+      Thermal Spell.prefab
+    projectPath: Assets\Prefabs\Spells\Secondary Thermal Spell.prefab
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\Prefabs\UI\Game Over Screen\Current Session High Score.prefab
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Assets\Prefabs\UI\Game
+      Over Screen\Current Session High Score.prefab
+    projectPath: Assets\Prefabs\UI\Game Over Screen\Current Session High Score.prefab
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\Prefabs\UI\Game Over Screen\Current Session High Score.prefab.meta
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Assets\Prefabs\UI\Game
+      Over Screen\Current Session High Score.prefab.meta
+    projectPath: Assets\Prefabs\UI\Game Over Screen\Current Session High Score.prefab.meta
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\Prefabs\UI\Game Over Screen\Game Over.prefab
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Assets\Prefabs\UI\Game
+      Over Screen\Game Over.prefab
+    projectPath: Assets\Prefabs\UI\Game Over Screen\Game Over.prefab
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\Prefabs\UI\Game Over Screen\Game Over.prefab.meta
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Assets\Prefabs\UI\Game
+      Over Screen\Game Over.prefab.meta
+    projectPath: Assets\Prefabs\UI\Game Over Screen\Game Over.prefab.meta
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\Prefabs\UI\Game Over Screen\High Score List.prefab
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Assets\Prefabs\UI\Game
+      Over Screen\High Score List.prefab
+    projectPath: Assets\Prefabs\UI\Game Over Screen\High Score List.prefab
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\Prefabs\UI\Game Over Screen\High Score List.prefab.meta
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Assets\Prefabs\UI\Game
+      Over Screen\High Score List.prefab.meta
+    projectPath: Assets\Prefabs\UI\Game Over Screen\High Score List.prefab.meta
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\Prefabs\UI\Game Over Screen\New High Score.prefab
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Assets\Prefabs\UI\Game
+      Over Screen\New High Score.prefab
+    projectPath: Assets\Prefabs\UI\Game Over Screen\New High Score.prefab
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\Prefabs\UI\Game Over Screen\New High Score.prefab.meta
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Assets\Prefabs\UI\Game
+      Over Screen\New High Score.prefab.meta
+    projectPath: Assets\Prefabs\UI\Game Over Screen\New High Score.prefab.meta
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\Scenes\End Screen.unity
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Assets\Scenes\End
+      Screen.unity
+    projectPath: Assets\Scenes\End Screen.unity
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\Scenes\End Screen.unity.meta
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Assets\Scenes\End
+      Screen.unity.meta
+    projectPath: Assets\Scenes\End Screen.unity.meta
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\Scenes\Main Game Screen.unity
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Assets\Scenes\Main
+      Game Screen.unity
+    projectPath: Assets\Scenes\Main Game Screen.unity
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\Scenes\Start Screen.unity
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Assets\Scenes\Start
+      Screen.unity
+    projectPath: Assets\Scenes\Start Screen.unity
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\Scenes\Start Screen.unity.meta
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Assets\Scenes\Start
+      Screen.unity.meta
+    projectPath: Assets\Scenes\Start Screen.unity.meta
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\Scripts\Combat\Attack.cs
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Assets\Scripts\Combat\Attack.cs
+    projectPath: Assets\Scripts\Combat\Attack.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\Scripts\End Game Score Keeping.meta
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Assets\Scripts\End
+      Game Score Keeping.meta
+    projectPath: Assets\Scripts\End Game Score Keeping.meta
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\Scripts\End Game Score Keeping\EndScreenManagement.cs
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Assets\Scripts\End
+      Game Score Keeping\EndScreenManagement.cs
+    projectPath: Assets\Scripts\End Game Score Keeping\EndScreenManagement.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\Scripts\End Game Score Keeping\EndScreenManagement.cs.meta
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Assets\Scripts\End
+      Game Score Keeping\EndScreenManagement.cs.meta
+    projectPath: Assets\Scripts\End Game Score Keeping\EndScreenManagement.cs.meta
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\Scripts\End Game Score Keeping\ScoreKeeping.cs
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Assets\Scripts\End
+      Game Score Keeping\ScoreKeeping.cs
+    projectPath: Assets\Scripts\End Game Score Keeping\ScoreKeeping.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\Scripts\End Game Score Keeping\ScoreKeeping.cs.meta
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Assets\Scripts\End
+      Game Score Keeping\ScoreKeeping.cs.meta
+    projectPath: Assets\Scripts\End Game Score Keeping\ScoreKeeping.cs.meta
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\Scripts\End Game Score Keeping\SessionHighScore.cs
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Assets\Scripts\End
+      Game Score Keeping\SessionHighScore.cs
+    projectPath: Assets\Scripts\End Game Score Keeping\SessionHighScore.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\End Game Score Keeping\SessionHighScore.cs.meta
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Assets\Scripts\End
+      Game Score Keeping\SessionHighScore.cs.meta
+    projectPath: Assets\Scripts\End Game Score Keeping\SessionHighScore.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\SceneLoading.meta
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Assets\Scripts\SceneLoading.meta
+    projectPath: Assets\Scripts\SceneLoading.meta
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\Scripts\SceneLoading\LoadSceneOnButtonPress.cs.meta
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Assets\Scripts\SceneLoading\LoadSceneOnButtonPress.cs.meta
+    projectPath: Assets\Scripts\SceneLoading\LoadSceneOnButtonPress.cs.meta
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\Sprites\AOEfire.png
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Assets\Sprites\AOEfire.png
+    projectPath: Assets\Sprites\AOEfire.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Sprites\AOEfire.png.meta
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Assets\Sprites\AOEfire.png.meta
+    projectPath: Assets\Sprites\AOEfire.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Library\assetDatabase3
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\assetDatabase3
+    projectPath: Library\assetDatabase3
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\CrashedAssetImports.txt
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\CrashedAssetImports.txt
+    projectPath: Library\CrashedAssetImports.txt
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Library\CurrentLayout.dwlt
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\CurrentLayout.dwlt
+    projectPath: Library\CurrentLayout.dwlt
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\EditorInstance.json
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\EditorInstance.json
+    projectPath: Library\EditorInstance.json
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Library\gfu\cache\branches.yaml
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\gfu\cache\branches.yaml
+    projectPath: Library\gfu\cache\branches.yaml
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\gfu\cache\gitlocks.yaml
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\gfu\cache\gitlocks.yaml
+    projectPath: Library\gfu\cache\gitlocks.yaml
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\gfu\cache\gitstatusentries.yaml
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\gfu\cache\gitstatusentries.yaml
+    projectPath: Library\gfu\cache\gitstatusentries.yaml
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\gfu\cache\gittrackingstatus.yaml
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\gfu\cache\gittrackingstatus.yaml
+    projectPath: Library\gfu\cache\gittrackingstatus.yaml
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\gfu\cache\repoinfo.yaml
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\gfu\cache\repoinfo.yaml
+    projectPath: Library\gfu\cache\repoinfo.yaml
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\InspectorExpandedItems.asset
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\InspectorExpandedItems.asset
+    projectPath: Library\InspectorExpandedItems.asset
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\LastSceneManagerSetup.txt
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\LastSceneManagerSetup.txt
+    projectPath: Library\LastSceneManagerSetup.txt
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\07\07fa91260aeca56448d034772056a294.info
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\metadata\07\07fa91260aeca56448d034772056a294.info
+    projectPath: Library\metadata\07\07fa91260aeca56448d034772056a294.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\0a\0af7abb094ec3ba41ae31324b023235e
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\metadata\0a\0af7abb094ec3ba41ae31324b023235e
+    projectPath: Library\metadata\0a\0af7abb094ec3ba41ae31324b023235e
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Library\metadata\0a\0af7abb094ec3ba41ae31324b023235e.info
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\metadata\0a\0af7abb094ec3ba41ae31324b023235e.info
+    projectPath: Library\metadata\0a\0af7abb094ec3ba41ae31324b023235e.info
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Library\metadata\18\18b4dbf8a0b54ea4adf46fb7f4d71dd0
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\metadata\18\18b4dbf8a0b54ea4adf46fb7f4d71dd0
+    projectPath: Library\metadata\18\18b4dbf8a0b54ea4adf46fb7f4d71dd0
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\18\18c8a3fd0b9f8d64aa96ccbfbbb97833
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\metadata\18\18c8a3fd0b9f8d64aa96ccbfbbb97833
+    projectPath: Library\metadata\18\18c8a3fd0b9f8d64aa96ccbfbbb97833
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Library\metadata\18\18c8a3fd0b9f8d64aa96ccbfbbb97833.info
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\metadata\18\18c8a3fd0b9f8d64aa96ccbfbbb97833.info
+    projectPath: Library\metadata\18\18c8a3fd0b9f8d64aa96ccbfbbb97833.info
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Library\metadata\18\18e096a98c2704c40a818dd1214cd179.info~427a99e31ada6a5f3171d8861393f98d3f8ad59c
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\metadata\18\18e096a98c2704c40a818dd1214cd179.info~427a99e31ada6a5f3171d8861393f98d3f8ad59c
+    projectPath: Library\metadata\18\18e096a98c2704c40a818dd1214cd179.info~427a99e31ada6a5f3171d8861393f98d3f8ad59c
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Library\metadata\18\18e096a98c2704c40a818dd1214cd179.info~HEAD
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\metadata\18\18e096a98c2704c40a818dd1214cd179.info~HEAD
+    projectPath: Library\metadata\18\18e096a98c2704c40a818dd1214cd179.info~HEAD
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Library\metadata\18\18e096a98c2704c40a818dd1214cd179~427a99e31ada6a5f3171d8861393f98d3f8ad59c
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\metadata\18\18e096a98c2704c40a818dd1214cd179~427a99e31ada6a5f3171d8861393f98d3f8ad59c
+    projectPath: Library\metadata\18\18e096a98c2704c40a818dd1214cd179~427a99e31ada6a5f3171d8861393f98d3f8ad59c
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Library\metadata\18\18e096a98c2704c40a818dd1214cd179~HEAD
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\metadata\18\18e096a98c2704c40a818dd1214cd179~HEAD
+    projectPath: Library\metadata\18\18e096a98c2704c40a818dd1214cd179~HEAD
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Library\metadata\1e\1ef2f4e4abaa53d479ded519da1a7fd8
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\metadata\1e\1ef2f4e4abaa53d479ded519da1a7fd8
+    projectPath: Library\metadata\1e\1ef2f4e4abaa53d479ded519da1a7fd8
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Library\metadata\1e\1ef2f4e4abaa53d479ded519da1a7fd8.info
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\metadata\1e\1ef2f4e4abaa53d479ded519da1a7fd8.info
+    projectPath: Library\metadata\1e\1ef2f4e4abaa53d479ded519da1a7fd8.info
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Library\metadata\24\2403d1f95ea54028853403e595bc9274
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\metadata\24\2403d1f95ea54028853403e595bc9274
+    projectPath: Library\metadata\24\2403d1f95ea54028853403e595bc9274
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\31\315ec34c54b2baa4498ee13b2432df4e.info
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\metadata\31\315ec34c54b2baa4498ee13b2432df4e.info
+    projectPath: Library\metadata\31\315ec34c54b2baa4498ee13b2432df4e.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\32\32abdcebbde09fa4783277d72873a9ad
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\metadata\32\32abdcebbde09fa4783277d72873a9ad
+    projectPath: Library\metadata\32\32abdcebbde09fa4783277d72873a9ad
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\36\3687ce0de3471d642b32da7e6d4b125e.info
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\metadata\36\3687ce0de3471d642b32da7e6d4b125e.info
+    projectPath: Library\metadata\36\3687ce0de3471d642b32da7e6d4b125e.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\37\378789df7895dd14ca9800db7382f910.info
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\metadata\37\378789df7895dd14ca9800db7382f910.info
+    projectPath: Library\metadata\37\378789df7895dd14ca9800db7382f910.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\43\43a216207e3b3e6418e9b42772217e16.info
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\metadata\43\43a216207e3b3e6418e9b42772217e16.info
+    projectPath: Library\metadata\43\43a216207e3b3e6418e9b42772217e16.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\51\51288a4fc4384861a5b1f9dd49b3da26
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\metadata\51\51288a4fc4384861a5b1f9dd49b3da26
+    projectPath: Library\metadata\51\51288a4fc4384861a5b1f9dd49b3da26
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\57\575ad3a41531c574c97b994fc90ae6a9
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\metadata\57\575ad3a41531c574c97b994fc90ae6a9
+    projectPath: Library\metadata\57\575ad3a41531c574c97b994fc90ae6a9
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Library\metadata\57\575ad3a41531c574c97b994fc90ae6a9.info
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\metadata\57\575ad3a41531c574c97b994fc90ae6a9.info
+    projectPath: Library\metadata\57\575ad3a41531c574c97b994fc90ae6a9.info
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Library\metadata\57\576652e2118fea645b8f8b011489cb96
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\metadata\57\576652e2118fea645b8f8b011489cb96
+    projectPath: Library\metadata\57\576652e2118fea645b8f8b011489cb96
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Library\metadata\57\576652e2118fea645b8f8b011489cb96.info
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\metadata\57\576652e2118fea645b8f8b011489cb96.info
+    projectPath: Library\metadata\57\576652e2118fea645b8f8b011489cb96.info
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Library\metadata\5c\5c5952fa16289c24bab33f443aab01c6
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\metadata\5c\5c5952fa16289c24bab33f443aab01c6
+    projectPath: Library\metadata\5c\5c5952fa16289c24bab33f443aab01c6
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\64\64dbf2350cfe4ef4fa5d7d47c52a2546
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\metadata\64\64dbf2350cfe4ef4fa5d7d47c52a2546
+    projectPath: Library\metadata\64\64dbf2350cfe4ef4fa5d7d47c52a2546
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Library\metadata\64\64dbf2350cfe4ef4fa5d7d47c52a2546.info
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\metadata\64\64dbf2350cfe4ef4fa5d7d47c52a2546.info
+    projectPath: Library\metadata\64\64dbf2350cfe4ef4fa5d7d47c52a2546.info
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Library\metadata\76\7677f2f5910bb5f498f167469d3a1fdc
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\metadata\76\7677f2f5910bb5f498f167469d3a1fdc
+    projectPath: Library\metadata\76\7677f2f5910bb5f498f167469d3a1fdc
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\77\7717982440cac5c42b97a90485686aa8.info
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\metadata\77\7717982440cac5c42b97a90485686aa8.info
+    projectPath: Library\metadata\77\7717982440cac5c42b97a90485686aa8.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\7d\7d951a7530818524bb7c06ef03551b4c
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\metadata\7d\7d951a7530818524bb7c06ef03551b4c
+    projectPath: Library\metadata\7d\7d951a7530818524bb7c06ef03551b4c
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\7e\7e9e48a3ab943ce47b4d9af1a49cb25d.info
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\metadata\7e\7e9e48a3ab943ce47b4d9af1a49cb25d.info
+    projectPath: Library\metadata\7e\7e9e48a3ab943ce47b4d9af1a49cb25d.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\89\89b65e106e6872a48bb8a52c3dec6716.info
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\metadata\89\89b65e106e6872a48bb8a52c3dec6716.info
+    projectPath: Library\metadata\89\89b65e106e6872a48bb8a52c3dec6716.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\91\91aec7c348762ff49a2107f80f956c36
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\metadata\91\91aec7c348762ff49a2107f80f956c36
+    projectPath: Library\metadata\91\91aec7c348762ff49a2107f80f956c36
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Library\metadata\91\91aec7c348762ff49a2107f80f956c36.info
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\metadata\91\91aec7c348762ff49a2107f80f956c36.info
+    projectPath: Library\metadata\91\91aec7c348762ff49a2107f80f956c36.info
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Library\metadata\92\924f7c4796a0f8948a622794426ed199.info
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\metadata\92\924f7c4796a0f8948a622794426ed199.info
+    projectPath: Library\metadata\92\924f7c4796a0f8948a622794426ed199.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\9b\9b20d58fe4692a2438c2a4b355d7182c
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\metadata\9b\9b20d58fe4692a2438c2a4b355d7182c
+    projectPath: Library\metadata\9b\9b20d58fe4692a2438c2a4b355d7182c
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Library\metadata\9b\9b20d58fe4692a2438c2a4b355d7182c.info
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\metadata\9b\9b20d58fe4692a2438c2a4b355d7182c.info
+    projectPath: Library\metadata\9b\9b20d58fe4692a2438c2a4b355d7182c.info
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Library\metadata\bb\bb6b4101ad2c42ec99f064a70c354e3c
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\metadata\bb\bb6b4101ad2c42ec99f064a70c354e3c
+    projectPath: Library\metadata\bb\bb6b4101ad2c42ec99f064a70c354e3c
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\cc\cc651508656f5fb4e91eecfeae7b3757.info
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\metadata\cc\cc651508656f5fb4e91eecfeae7b3757.info
+    projectPath: Library\metadata\cc\cc651508656f5fb4e91eecfeae7b3757.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\df\dff02b37056899a40b90560bcf64d947.info
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\metadata\df\dff02b37056899a40b90560bcf64d947.info
+    projectPath: Library\metadata\df\dff02b37056899a40b90560bcf64d947.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\f0\f0cf08a5091d42b40b0d7cd236f81b73
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\metadata\f0\f0cf08a5091d42b40b0d7cd236f81b73
+    projectPath: Library\metadata\f0\f0cf08a5091d42b40b0d7cd236f81b73
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Library\metadata\f0\f0cf08a5091d42b40b0d7cd236f81b73.info
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\metadata\f0\f0cf08a5091d42b40b0d7cd236f81b73.info
+    projectPath: Library\metadata\f0\f0cf08a5091d42b40b0d7cd236f81b73.info
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Library\metadata\fc\fca64384c2a27da4ea18a3e27701242c.info
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\metadata\fc\fca64384c2a27da4ea18a3e27701242c.info
+    projectPath: Library\metadata\fc\fca64384c2a27da4ea18a3e27701242c.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\fd\fda649a4a2b354c44bae0bcfb9585dea
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\metadata\fd\fda649a4a2b354c44bae0bcfb9585dea
+    projectPath: Library\metadata\fd\fda649a4a2b354c44bae0bcfb9585dea
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\ff\ff7a662073142fe4db0c54c70ed3c7ef
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\metadata\ff\ff7a662073142fe4db0c54c70ed3c7ef
+    projectPath: Library\metadata\ff\ff7a662073142fe4db0c54c70ed3c7ef
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Library\metadata\ff\ff7a662073142fe4db0c54c70ed3c7ef.info
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\metadata\ff\ff7a662073142fe4db0c54c70ed3c7ef.info
+    projectPath: Library\metadata\ff\ff7a662073142fe4db0c54c70ed3c7ef.info
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Library\ScriptAssemblies\Assembly-CSharp.dll
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\ScriptAssemblies\Assembly-CSharp.dll
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\ScriptAssemblies\Assembly-CSharp.dll.mdb
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\ScriptAssemblies\Assembly-CSharp.dll.mdb
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll.mdb
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll.mdb
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll.mdb
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll.mdb
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll.mdb
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll.mdb
+    projectPath: Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll.mdb
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\ScriptAssemblies\Unity.TextMeshPro.dll.mdb
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\ScriptAssemblies\Unity.TextMeshPro.dll.mdb
+    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.dll.mdb
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll.mdb
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll.mdb
+    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll.mdb
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\ScriptAssemblies\UnityEditor.StandardEvents.dll.mdb
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\ScriptAssemblies\UnityEditor.StandardEvents.dll.mdb
+    projectPath: Library\ScriptAssemblies\UnityEditor.StandardEvents.dll.mdb
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\shadercompiler-UnityShaderCompiler.exe0.log
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Library\shadercompiler-UnityShaderCompiler.exe0.log
+    projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+    projectPath: obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
+    projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+    projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache
+    projectPath: obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Temp\__Backupscenes\0.backup
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Temp\__Backupscenes\0.backup
+    projectPath: Temp\__Backupscenes\0.backup
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Temp\TarGZ\archtemp.tar
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Temp\TarGZ\archtemp.tar
+    projectPath: Temp\TarGZ\archtemp.tar
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Temp\UnityLockfile
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Temp\UnityLockfile
+    projectPath: Temp\UnityLockfile
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Temp\UnityTempFile-03ef05e2bb1068d42be6a8eac17309cf
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Temp\UnityTempFile-03ef05e2bb1068d42be6a8eac17309cf
+    projectPath: Temp\UnityTempFile-03ef05e2bb1068d42be6a8eac17309cf
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Temp\UnityTempFile-09da76aee4c70094f83bdff5d6f6bed0
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Temp\UnityTempFile-09da76aee4c70094f83bdff5d6f6bed0
+    projectPath: Temp\UnityTempFile-09da76aee4c70094f83bdff5d6f6bed0
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Temp\UnityTempFile-5e9372d49718e6647bffaa3fbc491972
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Temp\UnityTempFile-5e9372d49718e6647bffaa3fbc491972
+    projectPath: Temp\UnityTempFile-5e9372d49718e6647bffaa3fbc491972
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Temp\UnityTempFile-a4cb30740acb0294780f0d5b0e267e95
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Temp\UnityTempFile-a4cb30740acb0294780f0d5b0e267e95
+    projectPath: Temp\UnityTempFile-a4cb30740acb0294780f0d5b0e267e95
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Temp\UnityTempFile-b7723d6d766018148bdb84b5bb3d6d65
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Temp\UnityTempFile-b7723d6d766018148bdb84b5bb3d6d65
+    projectPath: Temp\UnityTempFile-b7723d6d766018148bdb84b5bb3d6d65
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Temp\UnityTempFile-ccde1a71e40e33e44aa920853b5113bd
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Temp\UnityTempFile-ccde1a71e40e33e44aa920853b5113bd
+    projectPath: Temp\UnityTempFile-ccde1a71e40e33e44aa920853b5113bd
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Temp\UnityTempFile-cd0cfcbb5af87b847bc5ac6a1b107ca0
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Temp\UnityTempFile-cd0cfcbb5af87b847bc5ac6a1b107ca0
+    projectPath: Temp\UnityTempFile-cd0cfcbb5af87b847bc5ac6a1b107ca0
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Temp\UnityTempFile-e3a1dd67a553fdf4ebd74dfd4056bcf8
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Temp\UnityTempFile-e3a1dd67a553fdf4ebd74dfd4056bcf8
+    projectPath: Temp\UnityTempFile-e3a1dd67a553fdf4ebd74dfd4056bcf8
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Temp\UnityTempFile-e69f68d7f2e7f59488932843d5843a70
+    fullPath: C:\Users\wgottfried\Documents\GitHub\Saint-Louis-Arcade-Jam\Temp\UnityTempFile-e69f68d7f2e7f59488932843d5843a70
+    projectPath: Temp\UnityTempFile-e69f68d7f2e7f59488932843d5843a70
+    originalPath: 
+    status: 1
+    staged: 0

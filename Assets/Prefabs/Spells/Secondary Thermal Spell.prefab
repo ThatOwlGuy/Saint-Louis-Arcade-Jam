@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4038602641648104}
   - component: {fileID: 212319165723947672}
+  - component: {fileID: 95803392523565110}
   m_Layer: 0
   m_Name: Graphic
   m_TagString: Untagged
@@ -36,7 +37,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4287678484832788}
   - component: {fileID: 61675673847803092}
-  - component: {fileID: 50118034148875460}
   - component: {fileID: 114560465120856838}
   m_Layer: 0
   m_Name: Secondary Thermal Spell
@@ -72,26 +72,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &50118034148875460
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1768687826980632}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 1
-  m_Constraints: 0
 --- !u!61 &61675673847803092
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -117,6 +97,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2, y: 2}
   m_EdgeRadius: 0
+--- !u!95 &95803392523565110
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1464335759644358}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0af7abb094ec3ba41ae31324b023235e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114560465120856838
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -130,7 +128,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
   duration: 0.2
-  hasKnockBack: 1
+  hasKnockBack: 0
   destroyOnTouch: 0
 --- !u!212 &212319165723947672
 SpriteRenderer:
@@ -167,14 +165,14 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: faa5dfd88e7fc4b429fd75c058e556cf, type: 3}
-  m_Color: {r: 1, g: 0.6628426, b: 0, a: 0.62352943}
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0

@@ -70,6 +70,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 224843934450630746}
+  - component: {fileID: 114544239619107568}
   m_Layer: 5
   m_Name: Current Session High Score
   m_TagString: Untagged
@@ -85,6 +86,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 224282967701573038}
+  - component: {fileID: 111472666756879792}
   m_Layer: 5
   m_Name: Player Scores
   m_TagString: Untagged
@@ -92,6 +94,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!111 &111472666756879792
+Animation:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1937774578016342}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: d1640b98dd7f06644be2e1a923b0c6d5, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: d1640b98dd7f06644be2e1a923b0c6d5, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!114 &114242196091172706
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -161,6 +178,20 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Your scores were...
+--- !u!114 &114544239619107568
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1850991899441014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff7a662073142fe4db0c54c70ed3c7ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  higherScore: {fileID: 114715714583773412}
+  lowerScore: {fileID: 114242196091172706}
+  animation: {fileID: 111472666756879792}
 --- !u!114 &114715714583773412
 MonoBehaviour:
   m_ObjectHideFlags: 1

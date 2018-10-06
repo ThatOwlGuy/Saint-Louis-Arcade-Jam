@@ -41,6 +41,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4816940552942094}
   - component: {fileID: 212527402743212872}
+  - component: {fileID: 95373322585542636}
   m_Layer: 0
   m_Name: Graphic
   m_TagString: Untagged
@@ -55,7 +56,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1082517712640064}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -1, y: -4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4816940552942094}
@@ -82,7 +83,7 @@ Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1082517712640064}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -110,6 +111,24 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.05}
   serializedVersion: 2
   m_Radius: 0.26
+--- !u!95 &95373322585542636
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1471364202513520}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 298eabdfa47ec2a46b4a3405988df878, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114207229526859166
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -125,8 +144,8 @@ MonoBehaviour:
   down: 115
   left: 97
   right: 100
-  button1: 46
-  button2: 47
+  button1: 96
+  button2: 49
 --- !u!114 &114520264057911870
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -139,7 +158,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reactToDamage: 0
-  speed: 2
+  speed: 4
 --- !u!114 &114551055143943148
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -173,7 +192,7 @@ MonoBehaviour:
     coolDownTime: 1
     onCoolDown: 0
   - attack: {fileID: 114560465120856838, guid: 924f7c4796a0f8948a622794426ed199, type: 2}
-    coolDownTime: 1
+    coolDownTime: 1.3
     onCoolDown: 0
 --- !u!212 &212527402743212872
 SpriteRenderer:

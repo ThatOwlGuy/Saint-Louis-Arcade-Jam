@@ -90,5 +90,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 2
   duration: 1
-  hasKnockBack: 1
+  hasKnockBack: 0
   destroyOnTouch: 1
