@@ -14,6 +14,8 @@ public class Attack : MonoBehaviour
 
     private void Start()
     {
+        EstablishSource();
+
         animator = gameObject.GetComponentInChildren<Animator>();
         if (animator == null)
         {
@@ -36,9 +38,31 @@ public class Attack : MonoBehaviour
         yield return null;
     }
 
-    public void EstablishSource(DeathHandler.Combatant source)
+    public void EstablishSource()
     {
-        attacker = source;
+        if (tag == "Enemy")
+            attacker = DeathHandler.Combatant.LizardPerson;
+
+        if (tag == "Player")
+        {
+            Mage[] mages = FindObjectsOfType<Mage>();
+
+            for(int i = 0; i < mages.Length; i++)
+            {
+                for(int j = 0; j < mages[i].spellSlots.Length; j++)
+                {
+                    
+                    if(name == mages[i].spellSlots[j].attack.name + "(Clone)")
+                    {
+                        if (mages[i].playerIndex == Player.Index.One)
+                            attacker = DeathHandler.Combatant.ThermalMage;
+                        else
+                            attacker = DeathHandler.Combatant.ElectromagneticMage;
+                    }
+                }
+            }
+        }
+
     }
 
     private void OnTriggerEnter2D(Collider2D other)

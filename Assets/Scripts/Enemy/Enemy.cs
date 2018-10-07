@@ -171,7 +171,6 @@ public class Enemy : MonoBehaviour {
         //return null if there are no mages
         if (mages.Length == 0)
         {
-            print("NO mages found!");
             return Vector3.zero;
         }
 

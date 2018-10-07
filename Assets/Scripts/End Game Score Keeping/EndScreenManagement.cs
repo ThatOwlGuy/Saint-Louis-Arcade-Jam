@@ -9,16 +9,16 @@ public class EndScreenManagement : MonoBehaviour {
 
     public GameObject gameOver;
     public GameObject currentHighScore;
-    public GameObject newHighScore;
-    public GameObject highScoreList;
 
-    private int screenIndex = -1;
+    [SerializeField]
+    private int screenIndex = 0;
 
     public bool screenTaskComplete = false;
 
     public void Start()
     {
         input = GetComponent<InputHelper>();
+        --screenIndex;
         NextScreen();
     }
 
@@ -43,15 +43,6 @@ public class EndScreenManagement : MonoBehaviour {
                 newScreen = currentHighScore;
                 break;
             case 1:
-                if (ScoreKeeping.IsNewHighScore(ScoreKeeping.currentPlayerScores[0]) || ScoreKeeping.IsNewHighScore(ScoreKeeping.currentPlayerScores[1]))
-                    newScreen = newHighScore;
-                else
-                    goto case 2;
-                break;                
-            case 2:
-                newScreen = highScoreList;
-                break;
-            case 3:
                 newScreen = gameOver;
                 break;
             default:
@@ -84,13 +75,11 @@ public class EndScreenManagement : MonoBehaviour {
         screen.offsetMax = new Vector2(0f, 0f);
 
         screenTaskComplete = false;
-
-        print("Loaded screen");
     }
 
     //Buttons should be set to the directional keys in the helper
     private bool PressedAnyButton()
     {
-        return (Input.GetKey(input.up) || Input.GetKey(input.left) || Input.GetKey(input.right) || Input.GetKey(input.down));
+        return (Input.GetKeyDown(input.up) || Input.GetKeyDown(input.left) || Input.GetKeyDown(input.right) || Input.GetKeyDown(input.down));
     }
 }

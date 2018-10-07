@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,8 +8,8 @@ public class DeathHandler : MonoBehaviour
     public enum Combatant
     {
         NULL,
-        ThermalMage,
-        ElectromagneticMage,
+        ThermalMage = 0,
+        ElectromagneticMage = 1,
         LizardPerson
     }
 
@@ -20,10 +21,7 @@ public class DeathHandler : MonoBehaviour
         //If the lizard killed, then we just register that a player died
         if (attacker == Combatant.LizardPerson)
         {
-            if (victim == Combatant.ThermalMage)
-                print("Player one died.");
-            else if (victim == Combatant.ElectromagneticMage)
-                print("Player two died.");
+            return;
         }
         else
         {
@@ -33,6 +31,20 @@ public class DeathHandler : MonoBehaviour
 
             if (attacker == Combatant.ElectromagneticMage)
                 p2.score += 10;
+        }
+    }
+
+    private void LateUpdate()
+    {
+        if(FindObjectsOfType<Mage>().Length == 0)
+        {
+            if (FindObjectsOfType<Mage>().Length == 0)
+            {
+                ScoreKeeping.currentPlayerScores = new int[2];
+                ScoreKeeping.currentPlayerScores[0] = p1.score;
+                ScoreKeeping.currentPlayerScores[1] = p2.score;
+                SceneManager.LoadScene("End Screen");
+            }
         }
     }
 }

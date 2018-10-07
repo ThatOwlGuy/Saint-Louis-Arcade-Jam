@@ -62,8 +62,6 @@ public class Mage : Player {
         if (playerIndex == Index.Two)
             source = DeathHandler.Combatant.ElectromagneticMage;
 
-        magic.GetComponent<Attack>().EstablishSource(source);
-
         //Start cooldown
         StartCoroutine(CoolDown(spellIndex));
     }

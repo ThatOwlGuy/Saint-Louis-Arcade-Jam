@@ -8,7 +8,6 @@ public class SessionHighScore : MonoBehaviour {
 
     public Text higherScore;
     public Text lowerScore;
-    public Animation animation;
 
     private void Start()
     {
@@ -17,13 +16,13 @@ public class SessionHighScore : MonoBehaviour {
 
         if(p1 > p2)
         {
-            higherScore.text = "Mage 1" + '\n' + '\n' + string.Format("00000", p1);
-            lowerScore.text = "Mage 2" + '\n' + '\n' + string.Format("00000", p2);
+            higherScore.text = "Mage 1" + '\n' + '\n' + p1;
+            lowerScore.text = "Mage 2" + '\n' + '\n' + p2;
         }
         else
         {
-            lowerScore.text = "Mage 1" + '\n' + '\n' + string.Format("00000", p1);
-            higherScore.text = "Mage 2" + '\n' + '\n' + string.Format("00000", p2);
+            lowerScore.text = "Mage 1" + '\n' + '\n' + p1;
+            higherScore.text = "Mage 2" + '\n' + '\n' + p2;
         }
 
         StartCoroutine(WaitForEndOfAnimation());
@@ -31,12 +30,7 @@ public class SessionHighScore : MonoBehaviour {
 
     private IEnumerator WaitForEndOfAnimation()
     {
-        while (animation.isPlaying)
-        {
-            yield return new WaitForEndOfFrame();
-        }
-
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2.0f);
 
         FindObjectOfType<EndScreenManagement>().screenTaskComplete = true;
     }
